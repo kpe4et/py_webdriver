@@ -1,4 +1,4 @@
-# py_webdriverAnuf
+# py_webdriver
 Финальный проект от Stepik по Python  Webdriver
 
 Попытка осмыслить и перенести "на бумагу" структуру.
