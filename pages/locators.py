@@ -14,3 +14,4 @@ class ProductPageLocators():
     PRODUCT_NAME_NOTIFY = (By.CSS_SELECTOR, "#messages > div:nth-child(1) > .alertinner strong")
     PRODUCT_PRICE_DIV = (By.CSS_SELECTOR, ".product_main p.price_color")
     PRODUCT_PRICE_NOTIFY = (By.CSS_SELECTOR, "#messages > div:nth-child(3) p:nth-child(1) strong")
+    SUCCESS_MESSAGE = (By.CSS_SELECTOR, "p.success")
