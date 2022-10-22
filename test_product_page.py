@@ -1,4 +1,3 @@
-from os import link
 from .pages.product_page import ProductPage
 from .pages.login_page import LoginPage
 from .pages.cart_page import CartPage
