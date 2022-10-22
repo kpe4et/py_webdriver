@@ -1,6 +1,7 @@
 from .locators import CartPageLocators
 from .base_page import BasePage
 
+#Да, я принципиально называю корзину CART, а не BASKET =) Хотя в названиях тестов оставил BASKET, для удобства ревьюера
 class CartPage(BasePage):
     def check_is_this_cart(self):
         cur_title = self.browser.find_element(*CartPageLocators.CART_H1)
