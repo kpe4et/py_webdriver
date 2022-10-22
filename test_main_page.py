@@ -26,7 +26,7 @@ def test_guest_should_be_on_login_page(browser):
     login_page = LoginPage(browser, browser.current_url)
     login_page.should_be_login_page()
 
-@pytest.mark.new
+@pytest.mark.skip
 def test_guest_cant_see_product_in_basket_opened_from_main_page(browser):
     page = MainPage(browser, LINK)
     page.open()

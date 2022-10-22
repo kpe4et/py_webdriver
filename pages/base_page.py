@@ -21,6 +21,14 @@ class BasePage():
         cart_link = self.browser.find_element(*BasePageLocators.CART_LINK)
         cart_link.click()
 
+    def fill_the_field(self, val, how, what):
+        field = self.browser.find_element(how, what)
+        field.send_keys(val)
+
+    def should_be_authorized_user(self):
+        assert self.is_element_present(*BasePageLocators.USER_ICON), "User icon is not presented," \
+                                                                    " probably unauthorised user"
+
     def should_be_login_link(self):
         assert self.is_element_present(*BasePageLocators.LOGIN_LINK), "Login link is not presented"
 
