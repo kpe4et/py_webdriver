@@ -8,7 +8,6 @@ class LoginPage(BasePage):
         self.fill_the_field(password, *LoginPageLocators.PASSWORD_FIELD1)
         self.fill_the_field(password, *LoginPageLocators.PASSWORD_FIELD2)
         self.browser.find_element(*LoginPageLocators.REGISTRATION_BUTTON).click()
-        self.should_be_authorized_user()
 
     def should_be_login_page(self):
         self.should_be_login_url()
